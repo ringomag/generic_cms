@@ -1,8 +1,18 @@
-<a href="{% url 'home' %}">Home</a> | <a href="{% url 'o_sajtu' %}">O_Sajtu</a> | <a href="{% url 'kontakt' %}">Kontakt</a>
+{% extends "base.html" %}
+{% load static %}
 
 
+
+{% block title %} O SAJTU {% endblock %}
+
+{% block images %}
+<img src="{% static 'images/slika3.jpg' %}">
+{% endblock %}
+
+{% block head%}
 <h1>podaci o sajtu</h1>
 
 <h2>istorijat sajta</h2>
 
 <p>firma, lorem ippsum.....loremamdada</p>
+{% endblock %}

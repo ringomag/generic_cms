@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %} Moj sajt {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'o_sajtu' %}">O_Sajtu</a></li>
+      <li><a href="{% url 'kontakt' %}">Kontakt</a></li>
+    </ul>
+
+    {% block images %}
+    <img src="{% static 'images/slika.jpg' %}">
+    {% endblock %}
+
+    {% block head %}
+    <h1>Heading in base template</h1>
+    {% endblock %}
+
+
+  </body>
+</html>
