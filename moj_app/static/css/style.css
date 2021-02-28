@@ -1,6 +1,12 @@
 body {
   margin: 0px;
 }
+
+img {
+  height: 640px;
+  width: 480px;
+}
+
 ul {
 list-style-type: none;
 margin: 0;
